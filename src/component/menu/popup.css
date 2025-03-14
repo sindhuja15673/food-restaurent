@@ -1,0 +1,144 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 550px;
+  border-radius: 25px;
+  transform: translate(-50%, -50%);
+  background: rgb(243, 242, 242);
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.close {
+  border: none;
+  width: auto;
+  padding: 9px 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 7px 3px rgb(233, 233, 233);
+  margin-left: 500px;
+}
+
+.add {
+  background-color:#ffffff;
+  box-shadow: 0 0 7px 3px rgb(233, 233, 233);
+  padding: 10px 45px;
+  border-radius: 5px;
+  border: none;
+  color: rgb(21, 138, 70) ;
+  margin-top: 5px;
+}
+.btn{
+    background-color:#ffffff;
+    box-shadow: 0 0 7px 3px rgb(233, 233, 233);
+    padding: 10px 45px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(21, 138, 70) ;
+    margin-top: 5px;
+  
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* .foods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+} */
+.foods {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.foods h3 {
+  flex: 1.5;
+  font-size: 16px;
+  margin: 0;
+}
+
+.foods p {
+  flex: 1.5;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+.foods input[type="checkbox"] {
+  flex: 0.5;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Optional: Highlight selected items */
+.foods.selected {
+  background-color: rgba(21, 138, 70, 0.2);
+  font-weight: bold;
+}
+
+/* Adjustments for mobile */
+@media screen and (max-width: 767px) {
+  .foods {
+    flex-direction: row;
+    padding: 8px;
+  }
+
+  .foods h3 {
+    font-size: 14px;
+  }
+
+  .foods p {
+    font-size: 12px;
+  }
+
+  .foods input[type="checkbox"] {
+    transform: scale(1);
+  }
+}
+
+
+
+/* .foods label{
+  width: none;
+  margin-left: -150px;
+}
+.foods label{
+  display: flex;
+}
+
+.foods.selected {
+  background-color: rgba(21, 138, 70, 0.2);
+} */
+
+/* .foods input[type="checkbox"] {
+  margin-right: 10px;
+} */
+
+@media screen and (max-width: 767px) {
+  .popup {
+    
+    width: 300px;
+    font-size: 12px;
+  }
+  .close {
+    
+  
+    background-color: #ffffff;
+    
+    margin-left: 260px;
+  }
+ }
